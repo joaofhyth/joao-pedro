@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roteiros de Ouro - Ouro Branco</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Roteiros de Ouro</h1>
+    <p>Mapa Interativo e Pontos Turísticos de Ouro Branco - MG</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#roteiros">Roteiros</a>
+    <a href="#contato">Contato</a>
+    <a href="#emprego">emprego</a>
+
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Este site apresenta os principais pontos turísticos de Ouro Branco (MG), organizados em um mapa interativo e roteiros temáticos para turistas, moradores e estudantes.</p>
+    
+    </section>
+
+    <section id="mapa">
+      <h2>Mapa Interativo</h2>
+      <input type="text" id="searchBox" placeholder="Buscar ponto turístico..." />
+      <select id="filter">
+        <option value="">Todos</option>
+        <option value="natural">Natural</option>
+        <option value="historico">Histórico</option>
+        <option value="religioso">Religioso</option>
+      </select>
+      <div id="map"></div>
+    </section>
+
+    <section id="roteiros">
+      <h2>Roteiros Temáticos</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://live.staticflickr.com/65535/51422933073_22d31a0c66_b.jpg" alt="Serra de Ouro Branco" />
+            <h3>Serra de Ouro Branco</h3>
+            <p>Um dos principais atrativos naturais da cidade.</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ourobranco-santoantonio.jpg/500px-Ourobranco-santoantonio.jpg" alt="Igreja Matriz de Santo Antônio" />
+            <h3>Igreja Matriz</h3>
+            <p>Importante patrimônio histórico do município.</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato com a equipe do projeto: <a href="mailto:contato@roteirosdeouro.com">contato@roteirosdeouro.com</a></p>
+      <selectin></selectin>
+    <section id="emprego">
+    <h1> A cidade De ouro branco oferece varios empregos;Para saber mais envie seu curriculo</h1>
+    <form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Roteiros de Ouro - Projeto de Pesquisa sobre Ouro Branco/MG</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
